@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        details {
+            margin-left: 3%;
+            outline: none;
+        }
+
+        details summary {
+            outline: none;
+        }
+
+        details summary::-webkit-details-marker {
+            display: none;
+        }
+
+        details summary:before {
+            height: 18px;
+            margin-right: 8px;
+            content: "+";
+        }
+
+        details[open] summary:before {
+            content: "-";
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div id="div"></div>
+<script src="app.js"></script>
+</body>
+</html>
